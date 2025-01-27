@@ -3,69 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Invitación de Cumpleaños</title>
+  <title>Invitación</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #ffe4e1;
-      color: #333;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('./invitacion-canva.png') no-repeat center center fixed;
+      background-size: cover;
     }
-    .card {
-      max-width: 500px;
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      background: white;
-    }
-    h1 {
-      color: #ff69b4;
-    }
-    p {
-      font-size: 18px;
-    }
-    .buttons {
-      margin-top: 20px;
+    .button-container {
+      text-align: center;
+      margin-top: 300px; /* Ajusta según tu diseño */
     }
     .button {
       display: inline-block;
-      font-size: 16px;
-      padding: 10px 20px;
-      margin: 5px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      text-decoration: none;
-      color: white;
-      transition: background 0.3s ease;
-    }
-    .location {
+      margin: 10px;
+      padding: 15px 25px;
       background: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
     }
-    .location:hover {
+    .button:hover {
       background: #45a049;
-    }
-    .whatsapp {
-      background: #25D366;
-    }
-    .whatsapp:hover {
-      background: #1DA851;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>¡Estás Invitado!</h1>
-    <p>Ven a celebrar el cumpleaños de <strong>Andrés</strong></p>
-    <p>🗓️ <strong>Fecha:</strong> 9 de febrero, 2025</p>
-    <p>⏰ <strong>Hora:</strong> 2:00 hrs</p>
-    <p>📍 <strong>Dirección:</strong> 9 Oriente 065</p>
-    <div class="buttons">
-      <!-- Botón para ver ubicación -->
-      <a class="button location" href="https://www.google.com/maps?q=-33.4489,-70.6693" target="_blank">📍 Ver Ubicación</a>
+  <div class="button-container">
+    <a class="button" href="https://www.google.com/maps?q=-33.4489,-70.6693" target="_blank">Ver Ubicación</a>
+    <a class="button" href="https://wa.me/56912345678?text=Hola,%20confirmo%20mi%20asistencia." target="_blank">Confirmar Asistencia</a>
+  </div>
+</body>
+</html>
+
       <!-- Botón para confirmar asistencia por WhatsApp -->
       <a class="button whatsapp" href="https://wa.me/56912345678?text=Hola%2C%20confirmo%20mi%20asistencia%20al%20cumplea%C3%B1os%20de%20Mar%C3%ADa." target="_blank">✔️ Confirmar Asistencia</a>
     </div>
