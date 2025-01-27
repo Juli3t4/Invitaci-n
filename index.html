@@ -3,37 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Invitación</title>
+  <title>Invitación de Cumpleaños</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: url('./video.mp4') no-repeat center center fixed;
-      background-size: cover;
-    }
-    .button-container {
       text-align: center;
-      margin-top: 300px; /* Ajusta según tu diseño */
+      background: #ffe4e1;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .card {
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background: white;
+    }
+    video {
+      max-width: 100%;
+      border-radius: 15px;
+      margin-bottom: 20px;
     }
     .button {
       display: inline-block;
-      margin: 10px;
-      padding: 15px 25px;
-      background: #4CAF50;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
       font-size: 16px;
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      transition: background 0.3s ease;
     }
-    .button:hover {
+    .location {
+      background: #4CAF50;
+    }
+    .location:hover {
       background: #45a049;
+    }
+    .whatsapp {
+      background: #25D366;
+    }
+    .whatsapp:hover {
+      background: #1DA851;
     }
   </style>
 </head>
 <body>
-  <div class="button-container">
-    <a class="button" href="https://maps.google.com/maps?q=-35.4448668%2C-71.658135&z=17&hl=es" target="_blank">Ver Ubicación</a>
-    <a class="button" href="https://wa.me/56941712009?text=Hola,%20confirmo%20mi%20asistencia." target="_blank">✔️ Confirmar Asistencia</a>
+  <div class="card">
+    <h1>¡Estás Invitado!</h1>
+    <!-- Video de la invitación -->
+    <video src="./video-invitacion.mp4" controls autoplay muted loop></video>
+    <p>Ven a celebrar el cumpleaños de <strong>María</strong></p>
+    <p>🗓️ <strong>Fecha:</strong> 10 de febrero, 2025</p>
+    <p>⏰ <strong>Hora:</strong> 18:00 hrs</p>
+    <p>📍 <strong>Dirección:</strong> Casa de María</p>
+    <div class="buttons">
+      <a class="button location" href="https://maps.google.com/maps?q=-35.4448668%2C-71.658135&z=17&hl=es" target="_blank">📍 Ver Ubicación</a>
+      <a class="button whatsapp" href="https://wa.me/56941712009?text=Hola%2C%20confirmo%20mi%20asistencia%20al%20cumplea%C3%B1os%20de%20Andr%C3%s.%20Mi%20Nombre%es:" target="_blank">✔️ Confirmar Asistencia</a>
+    </div>
   </div>
 </body>
 </html>
